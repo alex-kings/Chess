@@ -7,3 +7,6 @@
 .board-container{
     position:relative;
 }
+.piece{
+    z-index:100;
+}
