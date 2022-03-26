@@ -8,7 +8,8 @@ class Piece {
         this.board = board;
         this.size = this.board.size/8;
         this.id = this.getInitialPosition();
-        this.id.style['transition'] = transitionTime + " ease-out";
+        this.id.style['transition'] = transitionTime + ' ease-out';
+        this.id.style['z-index'] = '1000';
         this.clicked = false;
         this.getEventListeners();
     }

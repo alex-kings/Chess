@@ -3,7 +3,16 @@ class Board{
         this.id = document.getElementById(id)
         this.id.style.width = size + "px";
         this.size = size;
-        this.squares = getSquares();
+        this.squares = this.getSquares();
+        this.setStyle();
+        console.log(squares);
+    }
+
+    setStyle(){
+        this.id.style['display']='grid';
+        this.id.style['grid-gap']='0';
+        this.id.style['grid-template-rows']=`repeat(8,${this.size/8}px)`
+        this.id.style['grid-template-columns']=`repeat(8,${this.size/8}px)`
     }
 
     // Generates the squares for this board
