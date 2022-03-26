@@ -7,6 +7,6 @@
 .board-container{
     position:relative;
 }
-.piece{
+.square{
     z-index:100;
 }
